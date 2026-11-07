@@ -36,7 +36,7 @@
       <div class="wrap narrow">
         <h1 id="page-title">Privacy policy</h1>
         <p class="lead">AI Prompt Assistant keeps your prompts in your browser. We don't run a server, we don't collect data, and there's no analytics or tracking.</p>
-        <p class="note">The store version is currently 3.2.2. Starter packs, added sites and their permissions (including activeTab and scripting), the isolated menu frame and its input protections, and the Ko-fi preview apply from 4.0.0, submitted for store review.</p>
+        <p class="note">The store version is currently 3.2.2. Starter packs, added sites and their permissions (including activeTab and scripting), the isolated menu frame and its input protections, and the Ko-fi preview apply from 4.0.1, submitted for store review.</p>
         <p class="muted">Last updated: November 7, 2026. This policy covers the AI Prompt Assistant Chrome extension and this website.</p>
       </div>
     </section>
@@ -59,7 +59,7 @@
         <p>If you click <strong>Connect to Google Drive</strong>, Chrome shows Google's own sign-in and permission screen. The extension never sees your Google password.</p>
         <ul>
           <li>It asks for the <code>drive.file</code> permission, which only covers files the extension creates itself. It can't see or change anything else in your Drive.</li>
-          <li>It uses that access for one thing: your own backup file of prompts, <code>ai-prompt-assistant-prompts.json</code> in My Drive. It creates, reads and updates that file when you click <strong>Upload to Drive</strong> or <strong>Download from Drive</strong>.</li>
+          <li>It uses that access for one thing: your own backup file, <code>ai-prompt-assistant-prompts.json</code> in My Drive. The file holds your prompts and the list of sites you added, and no other data. It creates, reads and updates that file when you click <strong>Upload to Drive</strong> or <strong>Download from Drive</strong>.</li>
           <li>To show you where the backup is, the settings page reads the file's name, folder, size, last-updated time and owner account.</li>
           <li>Your browser talks to Google Drive directly. Nothing passes through us.</li>
         </ul>
@@ -83,7 +83,7 @@
         <ul>
           <li>When you add a site in <strong>Your sites</strong>, Chrome asks you to allow access to that one site. The extension gets access only if you choose Allow, and only to that site. A domain entered without <code>https://</code>, such as <code>chat.example.com</code>, covers both <code>chat.example.com</code> and <code>www.chat.example.com</code>.</li>
           <li><strong>Turn on for this site</strong> only fills in the address on the settings page. Nothing is added until you click <strong>Add site</strong> and allow it in Chrome.</li>
-          <li>Your list of added sites stays in this browser. In version 4.0.0 it isn't part of the Google Drive backup.</li>
+          <li>If you use Google Drive backup, your list of added sites is saved in the backup file too. Sites that arrive on another browser stay inactive there until you click <strong>Allow</strong> on that browser; syncing never turns a site on by itself.</li>
           <li>Sites you add can see the prompts you use there. See <a href="#what-sites-see">what a chat site can see</a>.</li>
           <li>Removing the site stops the extension running there and gives back its access. You can also remove access from Chrome's extension menu.</li>
         </ul>
