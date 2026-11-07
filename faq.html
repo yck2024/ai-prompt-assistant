@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ &amp; support · AI Prompt Assistant</title>
+  <meta name="description" content="Answers to common questions about AI Prompt Assistant, and how to get help.">
+  <link rel="canonical" href="https://yck2024.github.io/ai-prompt-assistant/faq.html">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F4EFE6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161B2A" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-128.png">
+  <link rel="preload" href="assets/fonts/nunito-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" alt="" width="40" height="40">AI Prompt Assistant</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="setup.html">Setup</a></li>
+        <li><a href="release-notes.html">Release notes</a></li>
+        <li><a href="faq.html" aria-current="page">FAQ &amp; support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="wrap narrow">
+        <h1 id="page-title">FAQ &amp; support</h1>
+        <p class="lead">Quick answers to common questions. Still stuck? Send us a note below.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="wrap narrow faq">
+        <h2 id="faq-title"><span class="sticky">Questions</span></h2>
+        <details>
+          <summary>Typing // does nothing. What should I check?</summary>
+          <div class="answer">
+            <ul>
+              <li>Make sure you're on a <a href="index.html#sites-title">supported site</a> and the cursor is in the message box.</li>
+              <li>Refresh the tab. Tabs that were open before you installed or updated the extension need a refresh.</li>
+              <li>Check that the extension is turned on at <code>chrome://extensions</code>.</li>
+              <li>On ChatGPT while signed in, version 3.2.2 has a known problem: the menu doesn't open. The next version fixes it.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>I pressed Enter and my message was sent. How do I avoid that?</summary>
+          <div class="answer">
+            <p>Use <kbd>Tab</kbd> to insert prompts. On many chat sites Enter sends the message straight away. Tab always inserts the prompt and leaves sending to you. On ChatGPT, the next version makes Enter insert too.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How does filtering work?</summary>
+          <div class="answer">
+            <p>After <span class="shortcut">//</span>, keep typing. The menu shows shortcuts that contain what you typed, upper or lower case: <span class="shortcut">//rev</span> finds <span class="shortcut">//reviseEnglish</span> and <span class="shortcut">//codeReview</span>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I use my prompts on another computer?</summary>
+          <div class="answer">
+            <p>Yes, with <a href="setup.html#drive">Google Drive backup</a>: upload on one computer, then download on the other. Or use <a href="setup.html#export">Export &amp; import</a> to move a file across. Chrome's own sync doesn't copy prompts between computers.</p>
+          </div>
+        </details>
+        <details>
+          <summary>After an update, the settings page opened and the sample prompts came back. Why?</summary>
+          <div class="answer">
+            <p>After each install or update, the extension opens its settings page and adds back any of the five sample prompts that are missing. Your own prompts, and samples you edited, are kept as they are. You can delete the samples again.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How do I share prompts with my team?</summary>
+          <div class="answer">
+            <p>Click <strong>Export JSON</strong> on the settings page and send the file. Your teammates click <strong>Import JSON</strong> to add those prompts to theirs.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I use it on a site that isn't listed?</summary>
+          <div class="answer">
+            <p>Not in the Chrome Web Store version yet. Coming in the next version, <a href="setup.html#your-sites">Your Sites</a> lets you add any chat site and allow access to it.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Does it work in other browsers or in desktop apps?</summary>
+          <div class="answer">
+            <p>It's made for Google Chrome on the web. Some other Chromium browsers can install Chrome Web Store extensions, but Google Drive backup needs Chrome. It doesn't work inside desktop or mobile chat apps.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Is my data private?</summary>
+          <div class="answer">
+            <p>Yes. Your prompts are stored in your browser, and we run no server and no analytics. Google Drive backup is optional and only touches its own file. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How do I remove everything?</summary>
+          <div class="answer">
+            <p>Uninstall the extension to delete your prompts from the browser. If you used Drive backup, delete <code>ai-prompt-assistant-prompts.json</code> from your Drive and remove the extension's access in your <a href="https://myaccount.google.com/permissions">Google Account settings</a>.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="support" aria-labelledby="support-title">
+      <div class="wrap narrow">
+        <div class="card support-card">
+          <img class="illo" src="assets/img/empty-notebook.webp" width="300" height="295" alt="">
+          <div>
+            <h2 id="support-title">Need help or have an idea?</h2>
+            <p>Tell us through the feedback form. Bug reports, site requests and ideas are all welcome. It helps to include the site you were on, what you typed, and your Chrome version.</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>AI Prompt Assistant</strong> is a Chrome extension: type <span class="shortcut">//</span> in an AI chat to drop in your saved prompts.</p>
+        <p>Fonts: Nunito and Inter, under the SIL Open Font License (<a href="assets/fonts/OFL-Nunito.txt">Nunito</a>, <a href="assets/fonts/OFL-Inter.txt">Inter</a>). More projects on <a href="https://kengblog.com/">kengblog.com</a>.</p>
+      </div>
+      <ul aria-label="More links">
+        <li><a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">Chrome Web Store</a></li>
+        <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

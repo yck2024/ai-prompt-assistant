@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Release notes · AI Prompt Assistant</title>
+  <meta name="description" content="What's new and fixed in AI Prompt Assistant.">
+  <link rel="canonical" href="https://yck2024.github.io/ai-prompt-assistant/release-notes.html">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F4EFE6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161B2A" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-128.png">
+  <link rel="preload" href="assets/fonts/nunito-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" alt="" width="40" height="40">AI Prompt Assistant</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="setup.html">Setup</a></li>
+        <li><a href="release-notes.html" aria-current="page">Release notes</a></li>
+        <li><a href="faq.html">FAQ &amp; support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="wrap narrow">
+        <h1 id="page-title">Release notes</h1>
+        <p class="lead">What's changed in AI Prompt Assistant, newest first.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="unreleased-title">
+      <div class="wrap narrow">
+        <div class="release card">
+          <h2 id="unreleased-title"><span class="sticky">Unreleased</span> <span class="date">Coming in the next version</span></h2>
+          <p class="muted">These changes aren't in the Chrome Web Store version yet. Until the next version, the store has version 3.2.2.</p>
+
+          <h3>Fixed: ChatGPT works again when you're signed in</h3>
+          <ul>
+            <li>Typing <span class="shortcut">//</span> on ChatGPT opens the prompt menu again when you're signed in. ChatGPT changed its message box, so the menu stopped appearing for signed-in users.</li>
+            <li>Picking a prompt with <kbd>Enter</kbd> now inserts it, instead of sending a message that says “//…”.</li>
+          </ul>
+
+          <h3>Fixed: new addresses</h3>
+          <ul>
+            <li>Works on the new addresses some chat tools moved to: <code>duck.ai</code> (DuckDuckGo AI Chat), <code>copilot.com</code> (Microsoft Copilot) and <code>notebook.google.com</code> (NotebookLM).</li>
+          </ul>
+
+          <h3>New: add your own sites</h3>
+          <ul>
+            <li>A new <strong>Your Sites</strong> section in settings lets you use your prompts on any other chat site. Type a domain such as <code>perplexity.ai</code> (it covers <code>www.perplexity.ai</code> too) or paste a full URL from the address bar, then click <strong>Add Site</strong>.</li>
+            <li>Chrome asks you to allow access to that one site. The extension gets no access to other sites until you add them.</li>
+            <li>Reload tabs already open on the site before you type <span class="shortcut">//</span> there.</li>
+            <li>Removing a site stops the extension running there and gives back its access.</li>
+            <li>Some sites use message boxes the extension can't type into. See the <a href="setup.html#your-sites">setup guide</a>.</li>
+          </ul>
+        </div>
+
+        <div class="release card">
+          <h2 id="v322-title">3.2.2 <span class="date">Current Chrome Web Store version</span></h2>
+          <ul>
+            <li>Works on ChatGPT, Claude, Google Gemini, Google AI Studio, DuckDuckGo AI Chat, Microsoft Copilot (including Microsoft 365), Glean and NotebookLM.</li>
+            <li>Known issue: on ChatGPT, <span class="shortcut">//</span> doesn't open the menu while you're signed in. Fixed in the next version (see above).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>AI Prompt Assistant</strong> is a Chrome extension: type <span class="shortcut">//</span> in an AI chat to drop in your saved prompts.</p>
+        <p>Fonts: Nunito and Inter, under the SIL Open Font License (<a href="assets/fonts/OFL-Nunito.txt">Nunito</a>, <a href="assets/fonts/OFL-Inter.txt">Inter</a>). More projects on <a href="https://kengblog.com/">kengblog.com</a>.</p>
+      </div>
+      <ul aria-label="More links">
+        <li><a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">Chrome Web Store</a></li>
+        <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
