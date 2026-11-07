@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Release notes · AI Prompt Assistant</title>
-  <meta name="description" content="What's new and fixed in AI Prompt Assistant.">
+  <meta name="description" content="What's new and fixed in AI Prompt Assistant, including version 4.0.0.">
   <link rel="canonical" href="https://yck2024.github.io/ai-prompt-assistant/release-notes.html">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#F4EFE6" media="(prefers-color-scheme: light)">
@@ -39,38 +39,77 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="unreleased-title">
+    <section class="section" aria-labelledby="next-title">
       <div class="wrap narrow">
         <div class="release card">
-          <h2 id="unreleased-title"><span class="sticky">Unreleased</span> <span class="date">Coming in the next version</span></h2>
-          <p class="muted">These changes aren't in the Chrome Web Store version yet. Until the next version, the store has version 3.2.2.</p>
-
-          <h3>Fixed: ChatGPT works again when you're signed in</h3>
+          <h2 id="next-title"><span class="sticky sticky--sage">Coming next</span> <span class="date">After 4.0.0</span></h2>
           <ul>
-            <li>Typing <span class="shortcut">//</span> on ChatGPT opens the prompt menu again when you're signed in. ChatGPT changed its message box, so the menu stopped appearing for signed-in users.</li>
-            <li>Picking a prompt with <kbd>Enter</kbd> now inserts it, instead of sending a message that says “//…”.</li>
+            <li>Google Drive backup will also carry the sites you add, so your list follows you to other computers. Each browser will still ask you to allow access to every site; syncing never turns a site on by itself.</li>
+          </ul>
+        </div>
+
+        <div class="release card">
+          <h2 id="v400-title"><span class="sticky">4.0.0</span> <span class="date">November 2026</span></h2>
+          <p>A big update: a fresh look, starter packs, more sites, and sites of your own. When you update, Chrome may ask you to accept the new sites the extension works on. Accept, then refresh your chat tabs.</p>
+
+          <h3>New: a fresh look</h3>
+          <ul>
+            <li>The toolbar popup, settings page and <span class="shortcut">//</span> menu have a new “Pocket notebook” design, with a new rounded icon.</li>
+            <li>The settings page has a menu for each part: Your prompts, Starter packs, Your sites, Drive sync, Import &amp; export, Help and Support. You can search your prompts, and long lists show 20 at a time with <strong>Show more</strong>.</li>
+            <li>The <span class="shortcut">//</span> menu matches the chat site's light or dark look and shows a short key hint: <kbd>Tab</kbd> insert, <kbd>↑</kbd> <kbd>↓</kbd> move, <kbd>Esc</kbd> close.</li>
           </ul>
 
-          <h3>Fixed: new addresses</h3>
+          <h3>New: welcome page and starter packs</h3>
           <ul>
+            <li>After you install, a welcome page offers seven starter packs: Everyday, Developer, Writer, Sales, Consulting, Student and Marketing, with eight prompts each. Pick some, or start blank.</li>
+            <li>Add more packs any time from <strong>Starter packs</strong> in settings. Adding a pack never replaces a shortcut you already have.</li>
+            <li>Updates no longer open the settings page or bring back sample prompts you deleted.</li>
+          </ul>
+
+          <h3>New: works on ten more sites</h3>
+          <ul>
+            <li>Built in now: Perplexity, Grok, DeepSeek, Mistral Le Chat, Meta AI, Poe, Kimi, Qwen, Felo and Dust.</li>
+            <li>Glean works on all of <code>app.glean.com</code>, not only its chat page.</li>
             <li>Works on the new addresses some chat tools moved to: <code>duck.ai</code> (DuckDuckGo AI Chat), <code>copilot.com</code> (Microsoft Copilot) and <code>notebook.google.com</code> (NotebookLM).</li>
           </ul>
 
           <h3>New: add your own sites</h3>
           <ul>
-            <li>A new <strong>Your Sites</strong> section in settings lets you use your prompts on any other chat site. Type a domain such as <code>perplexity.ai</code> (it covers <code>www.perplexity.ai</code> too) or paste a full URL from the address bar, then click <strong>Add Site</strong>.</li>
-            <li>Chrome asks you to allow access to that one site. The extension gets no access to other sites until you add them.</li>
-            <li>Reload tabs already open on the site before you type <span class="shortcut">//</span> there.</li>
-            <li>Removing a site stops the extension running there and gives back its access.</li>
+            <li>A <strong>Your sites</strong> section in settings lets you use your prompts on any other chat site, such as your company's AI tool. Type a domain such as <code>chat.example.com</code>, or paste a full URL from the address bar, then click <strong>Add site</strong>.</li>
+            <li>On a site that isn't built in, click the toolbar button and choose <strong>Turn on for this site</strong>. Settings opens with the site's address already filled in.</li>
+            <li>Chrome asks you to allow access to that one site. The extension gets no access to other sites until you add them. Removing a site gives back its access.</li>
             <li>Some sites use message boxes the extension can't type into. See the <a href="setup.html#your-sites">setup guide</a>.</li>
+          </ul>
+
+          <h3>New: a toolbar button that tells you what's going on</h3>
+          <ul>
+            <li>The popup shows whether the extension is on for the current tab, and offers <strong>Reload this tab</strong> or <strong>Turn on for this site</strong> when that helps.</li>
+          </ul>
+
+          <h3>New: support the project</h3>
+          <ul>
+            <li>A <strong>Support</strong> link in settings and in the popup shows a preview of the Ko-fi page, with an <strong>Open Ko-fi</strong> button. It's optional and changes nothing else.</li>
+          </ul>
+
+          <h3>Fixed</h3>
+          <ul>
+            <li>ChatGPT works again when you're signed in. ChatGPT changed its message box, so the menu had stopped appearing for signed-in users.</li>
+            <li>On ChatGPT, picking a prompt with <kbd>Enter</kbd> now inserts it, instead of sending a message that says “//…”.</li>
+            <li>A prompt or shortcut that contains HTML, such as <code>&lt;b&gt;</code>, now shows as plain text in settings and in the menu.</li>
+          </ul>
+
+          <h3>Privacy</h3>
+          <ul>
+            <li>The <span class="shortcut">//</span> menu is now drawn in its own extension frame. The chat site can't read or search the prompts listed in it. See <a href="privacy.html#what-sites-see">what a chat site can see</a>.</li>
+            <li>The menu only reacts to your own typing and clicks, not to anything the page itself does.</li>
           </ul>
         </div>
 
         <div class="release card">
-          <h2 id="v322-title">3.2.2 <span class="date">Current Chrome Web Store version</span></h2>
+          <h2 id="v322-title">3.2.2</h2>
           <ul>
             <li>Works on ChatGPT, Claude, Google Gemini, Google AI Studio, DuckDuckGo AI Chat, Microsoft Copilot (including Microsoft 365), Glean and NotebookLM.</li>
-            <li>Known issue: on ChatGPT, <span class="shortcut">//</span> doesn't open the menu while you're signed in. Fixed in the next version (see above).</li>
+            <li>Known issue: on ChatGPT, <span class="shortcut">//</span> doesn't open the menu while you're signed in. Fixed in 4.0.0.</li>
           </ul>
         </div>
       </div>
@@ -85,6 +124,7 @@
       <ul aria-label="More links">
         <li><a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">Chrome Web Store</a></li>
         <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+        <li><a href="https://ko-fi.com/kengblog">Support on Ko-fi</a></li>
         <li><a href="privacy.html">Privacy policy</a></li>
       </ul>
     </div>
