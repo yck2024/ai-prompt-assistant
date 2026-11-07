@@ -17,9 +17,6 @@
 
 :root {
   --pa-navy: #22305A;
-  --pa-navy-deep: #161B2A;
-  --pa-oatmeal: #F4EFE6;
-  --pa-apricot: #F6CBA5;
   --pa-sage: #A9C3A6;
   --pa-paper: #F4EFE6;
   --pa-surface: #FFFDF9;
@@ -195,7 +192,7 @@ kbd {
 /* Layout blocks */
 main { display: block; padding-bottom: 32px; }
 .section { padding: 40px 0 8px; }
-.section > .wrap > h2:first-child, .section-head { margin-bottom: 16px; }
+.section > .wrap > h2:first-child { margin-bottom: 16px; }
 .lead { font-size: 18px; color: var(--pa-text); max-width: 60ch; }
 .muted { color: var(--pa-text-muted); }
 /* Narrow reading column that keeps the same left edge as the header and wide sections. */
@@ -256,7 +253,6 @@ main { display: block; padding-bottom: 32px; }
 .note > :last-child { margin-bottom: 0; }
 .note strong:first-child { color: var(--pa-heading); }
 .note--sage { border-left-color: var(--pa-sage); background: var(--pa-success-bg); color: var(--pa-text); }
-@media (prefers-color-scheme: dark) { .note--sage { color: var(--pa-text); } }
 
 .tag {
   display: inline-block; vertical-align: 2px;
@@ -265,7 +261,6 @@ main { display: block; padding-bottom: 32px; }
   background: var(--pa-highlight); color: var(--pa-navy);
   white-space: nowrap;
 }
-.tag--sage { background: var(--pa-sage); }
 
 /* Screenshot frame */
 figure { margin: 16px 0; }
@@ -277,6 +272,8 @@ figcaption { margin-top: 8px; font-size: 14px; color: var(--pa-text-muted); }
 table { border-collapse: collapse; width: 100%; font-size: 15px; }
 th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--pa-line); vertical-align: top; }
 tr:last-child td { border-bottom: 0; }
+caption { text-align: left; padding: 10px 14px; font-size: 14px; }
+caption.below { caption-side: bottom; }
 th { font-weight: 700; color: var(--pa-heading); background: var(--pa-surface-sunken); }
 td .addr { display: inline-block; max-width: 100%; overflow-wrap: anywhere; font-family: var(--pa-font-mono); font-size: 14px; margin: 1px 6px 1px 0; }
 @media (max-width: 480px) { th, td { padding: 9px 10px; } td .addr { font-size: 13px; } }

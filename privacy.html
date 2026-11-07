@@ -46,12 +46,12 @@
         <ul>
           <li><strong>Your prompts</strong> (each shortcut and its text) are kept in Chrome's extension storage on your computer. They aren't sent anywhere unless you use Google Drive backup.</li>
           <li>If you connect Google Drive, the extension also remembers the ID of your backup file so it can find it again.</li>
-          <li>From the next update, it also stores the list of sites you added yourself.</li>
+          <li>From the next version (not yet in the Chrome Web Store version), it also stores the list of sites you add yourself.</li>
         </ul>
         <p>Everything is removed from your computer when you uninstall the extension. Chrome's own sync doesn't copy these prompts to your other devices.</p>
 
         <h2 id="no-server">No server, no analytics</h2>
-        <p>We don't operate any server for this extension. It doesn't use analytics, ads or tracking, and we never receive your prompts, what you type, or your chats. Nothing is sold or shared. This website has no analytics or tracking either.</p>
+        <p>We don't operate any server for this extension. It doesn't use analytics, ads or tracking, and we never receive your prompts, what you type, or your chats. Nothing is sold or shared. This website has no analytics or tracking either. It's hosted on GitHub Pages, which may log visitors' IP addresses for security (see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>).</p>
 
         <h2 id="drive">Google Drive backup (optional)</h2>
         <p>If you click <strong>Connect to Google Drive</strong>, Chrome shows Google's own sign-in and permission screen. The extension never sees your Google password.</p>
@@ -67,9 +67,11 @@
         <h2 id="sites">Where the extension runs</h2>
         <p>The extension runs on the AI chat sites listed on the <a href="index.html#sites-title">home page</a>. There it watches the message box for <span class="shortcut">//</span> so it can show your prompts, and it inserts the prompt you pick. It doesn't record, store or send what you type or the chat's replies.</p>
 
-        <h2 id="your-sites">Sites you add yourself (from the next update)</h2>
+        <h2 id="your-sites">Sites you add yourself (coming in the next version)</h2>
+        <p>This isn't in the Chrome Web Store version yet.</p>
         <ul>
-          <li>When you add a site in <strong>Your Sites</strong>, Chrome asks you to allow access to that one site. The extension gets access only if you choose Allow, and only to that site.</li>
+          <li>When you add a site in <strong>Your Sites</strong>, Chrome asks you to allow access to that one site. The extension gets access only if you choose Allow, and only to that site. A domain such as <code>perplexity.ai</code> covers both <code>perplexity.ai</code> and <code>www.perplexity.ai</code>.</li>
+          <li>Sites you add can see the prompts you use there. See <a href="#what-sites-see">what a chat site can see</a>.</li>
           <li>Removing the site stops the extension running there and gives back its access. You can also remove access from Chrome's extension menu.</li>
         </ul>
 
