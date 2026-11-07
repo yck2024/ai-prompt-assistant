@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy policy · AI Prompt Assistant</title>
-  <meta name="description" content="What AI Prompt Assistant stores, how Google Drive backup works, and what we never collect.">
+  <meta name="description" content="What AI Prompt Assistant stores, what it asks Chrome for, how Google Drive backup works, and what we never collect.">
   <link rel="canonical" href="https://yck2024.github.io/ai-prompt-assistant/privacy.html">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#F4EFE6" media="(prefers-color-scheme: light)">
@@ -36,6 +36,7 @@
       <div class="wrap narrow">
         <h1 id="page-title">Privacy policy</h1>
         <p class="lead">AI Prompt Assistant keeps your prompts in your browser. We don't run a server, we don't collect data, and there's no analytics or tracking.</p>
+        <p class="note">The store version is currently 3.2.2. Starter packs, added sites and their permissions (including activeTab and scripting), the isolated menu frame and its input protections, and the Ko-fi preview apply from 4.0.0, submitted for store review.</p>
         <p class="muted">Last updated: November 7, 2026. This policy covers the AI Prompt Assistant Chrome extension and this website.</p>
       </div>
     </section>
@@ -46,7 +47,8 @@
         <ul>
           <li><strong>Your prompts</strong> (each shortcut and its text) are kept in Chrome's extension storage on your computer. They aren't sent anywhere unless you use Google Drive backup.</li>
           <li>If you connect Google Drive, the extension also remembers the ID of your backup file so it can find it again.</li>
-          <li>From the next version (not yet in the Chrome Web Store version), it also stores the list of sites you add yourself.</li>
+          <li>The list of <a href="#your-sites">sites you add yourself</a>.</li>
+          <li>The starter packs come with the extension. Adding one copies its prompts into your own list; nothing is downloaded.</li>
         </ul>
         <p>Everything is removed from your computer when you uninstall the extension. Chrome's own sync doesn't copy these prompts to your other devices.</p>
 
@@ -57,26 +59,41 @@
         <p>If you click <strong>Connect to Google Drive</strong>, Chrome shows Google's own sign-in and permission screen. The extension never sees your Google password.</p>
         <ul>
           <li>It asks for the <code>drive.file</code> permission, which only covers files the extension creates itself. It can't see or change anything else in your Drive.</li>
-          <li>It uses that access for one thing: your own backup file, <code>ai-prompt-assistant-prompts.json</code> in My Drive. It creates, reads and updates that file when you click <strong>Upload to Drive</strong> or <strong>Download from Drive</strong>.</li>
+          <li>It uses that access for one thing: your own backup file of prompts, <code>ai-prompt-assistant-prompts.json</code> in My Drive. It creates, reads and updates that file when you click <strong>Upload to Drive</strong> or <strong>Download from Drive</strong>.</li>
           <li>To show you where the backup is, the settings page reads the file's name, folder, size, last-updated time and owner account.</li>
           <li>Your browser talks to Google Drive directly. Nothing passes through us.</li>
         </ul>
         <p><strong>Disconnect</strong> removes the extension's access. You can also remove it any time in your <a href="https://myaccount.google.com/permissions">Google Account settings</a>. The backup file stays in your Drive until you delete it.</p>
         <p>AI Prompt Assistant's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-        <h2 id="sites">Where the extension runs</h2>
-        <p>The extension runs on the AI chat sites listed on the <a href="index.html#sites-title">home page</a>. There it watches the message box for <span class="shortcut">//</span> so it can show your prompts, and it inserts the prompt you pick. It doesn't record, store or send what you type or the chat's replies.</p>
-
-        <h2 id="your-sites">Sites you add yourself (coming in the next version)</h2>
-        <p>This isn't in the Chrome Web Store version yet.</p>
+        <h2 id="permissions">What the extension asks Chrome for</h2>
         <ul>
-          <li>When you add a site in <strong>Your Sites</strong>, Chrome asks you to allow access to that one site. The extension gets access only if you choose Allow, and only to that site. A domain such as <code>perplexity.ai</code> covers both <code>perplexity.ai</code> and <code>www.perplexity.ai</code>.</li>
+          <li><strong>Access to the built-in AI chat sites</strong> listed on the <a href="index.html#sites-title">home page</a>, granted when you install. It runs only on those sites, plus the ones you add yourself.</li>
+          <li><strong>Storage</strong>, to keep your prompts and settings in your browser.</li>
+          <li><strong>Active tab</strong> (<code>activeTab</code>): when you click the toolbar button, it can see the address of the tab you're on, so the popup can say whether the extension is on there and offer <strong>Turn on for this site</strong>. It gets nothing from other tabs, and nothing until you click.</li>
+          <li><strong>Scripting</strong>, to start the extension on sites you add yourself, after you allow them.</li>
+          <li><strong>Optional access to other sites</strong>: nothing is granted when you install. Chrome asks you each time you add a site, for that one site only.</li>
+          <li><strong>Identity</strong>, so Chrome can handle the Google sign-in for the optional Drive backup.</li>
+        </ul>
+
+        <h2 id="sites">Where the extension runs</h2>
+        <p>The extension runs on the built-in AI chat sites and on sites you add. There it watches the message box for <span class="shortcut">//</span> so it can show your prompts, and it inserts the prompt you pick. It doesn't record, store or send what you type or the chat's replies.</p>
+
+        <h2 id="your-sites">Sites you add yourself</h2>
+        <ul>
+          <li>When you add a site in <strong>Your sites</strong>, Chrome asks you to allow access to that one site. The extension gets access only if you choose Allow, and only to that site. A domain entered without <code>https://</code>, such as <code>chat.example.com</code>, covers both <code>chat.example.com</code> and <code>www.chat.example.com</code>.</li>
+          <li><strong>Turn on for this site</strong> only fills in the address on the settings page. Nothing is added until you click <strong>Add site</strong> and allow it in Chrome.</li>
+          <li>Your list of added sites stays in this browser. In version 4.0.0 it isn't part of the Google Drive backup.</li>
           <li>Sites you add can see the prompts you use there. See <a href="#what-sites-see">what a chat site can see</a>.</li>
           <li>Removing the site stops the extension running there and gives back its access. You can also remove access from Chrome's extension menu.</li>
         </ul>
 
         <h2 id="what-sites-see">What a chat site can see</h2>
-        <p>A prompt you insert becomes ordinary text in that site's message box, just like text you type. The site can read it, and it's sent to the site when you send your message. While the <span class="shortcut">//</span> menu is open, it's shown inside the page, so the site could also see the shortcuts and the start of the prompts listed in it. This applies to every site the extension runs on, including the ones you add. Only add sites you trust with your prompts.</p>
+        <p>A prompt you insert becomes ordinary text in that site's message box, just like text you type. The site can read it, and it's sent to the site when you send your message. This applies to every site the extension runs on, including the ones you add. Only add sites you trust with your prompts.</p>
+        <p>The <span class="shortcut">//</span> menu itself is drawn in a separate frame that belongs to the extension, not to the chat site. The site can't read or search the shortcuts and prompt previews listed in it; it only gets the prompt you insert. The menu also reacts only to your own typing and clicks, so a page can't open it or pick a prompt for you.</p>
+
+        <h2 id="kofi">Ko-fi support window</h2>
+        <p>If you click <strong>Support</strong>, a window shows a preview of our Ko-fi page (<code>ko-fi.com/kengblog</code>). Only then does your browser contact Ko-fi, without telling it which page you came from, and the preview is removed when you close the window. Your prompts are never sent to Ko-fi. Ko-fi handles the preview, and the page <strong>Open Ko-fi</strong> opens, under its own privacy policy.</p>
 
         <h2 id="feedback">Feedback</h2>
         <p>If you send feedback through our <a href="https://forms.gle/EVX64Rimp2fQsJxh8">feedback form</a> (a Google Form), we receive what you write in it. We use it only to answer you and improve the extension.</p>
@@ -98,6 +115,7 @@
       <ul aria-label="More links">
         <li><a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">Chrome Web Store</a></li>
         <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+        <li><a href="https://ko-fi.com/kengblog">Support on Ko-fi</a></li>
         <li><a href="privacy.html">Privacy policy</a></li>
       </ul>
     </div>

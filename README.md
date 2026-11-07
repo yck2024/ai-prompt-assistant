@@ -6,8 +6,8 @@ This repository is the public website for the AI Prompt Assistant Chrome extensi
 ## Pages
 
 - `index.html`: what `//` does, features and supported sites
-- `setup.html`: install, first prompts, Google Drive backup and sync, adding your own sites
-- `release-notes.html`: what's changed
+- `setup.html`: install, starter packs, first prompts, the toolbar button, adding your own sites, Google Drive backup and sync, Ko-fi support
+- `release-notes.html`: what's changed in each version
 - `privacy.html`: privacy policy
 - `faq.html`: FAQ and support
 

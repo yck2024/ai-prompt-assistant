@@ -42,21 +42,23 @@
     <section class="section" aria-labelledby="faq-title">
       <div class="wrap narrow faq">
         <h2 id="faq-title"><span class="sticky">Questions</span></h2>
+        <p class="note">The Chrome Web Store version is still 3.2.2. The new toolbar, settings layout, starter packs, added sites, Support window and private menu frame described below arrive with 4.0.0, after store review.</p>
         <details>
           <summary>Typing // does nothing. What should I check?</summary>
           <div class="answer">
             <ul>
-              <li>Make sure you're on a <a href="index.html#sites-title">supported site</a> and the cursor is in the message box.</li>
+              <li>Click the extension's toolbar button. It tells you whether the extension is on for this tab, and offers <strong>Reload this tab</strong> or <strong>Turn on for this site</strong> when that helps.</li>
+              <li>Make sure you're on a <a href="index.html#sites-title">supported site</a> or <a href="setup.html#your-sites">a site you added</a>, and the cursor is in the message box.</li>
               <li>Refresh the tab. Tabs that were open before you installed or updated the extension need a refresh.</li>
-              <li>Check that the extension is turned on at <code>chrome://extensions</code>.</li>
-              <li>On ChatGPT while signed in, version 3.2.2 has a known problem: the menu doesn't open. The next version fixes it.</li>
+              <li>Check that the extension is turned on at <code>chrome://extensions</code>. After an update that adds sites, Chrome may pause it until you accept them.</li>
+              <li>On ChatGPT while signed in, the current store version, 3.2.2, has a known problem: the menu doesn't open. The fix arrives with 4.0.0, after store review.</li>
             </ul>
           </div>
         </details>
         <details>
           <summary>I pressed Enter and my message was sent. How do I avoid that?</summary>
           <div class="answer">
-            <p>Use <kbd>Tab</kbd> to insert prompts. On many chat sites Enter sends the message straight away. Tab always inserts the prompt and leaves sending to you. On ChatGPT, the next version makes Enter insert too.</p>
+            <p>Use <kbd>Tab</kbd> to insert prompts. On many chat sites Enter sends the message straight away. Tab always inserts the prompt and leaves sending to you. On ChatGPT, Enter will insert too in 4.0.0; the store version is still 3.2.2.</p>
           </div>
         </details>
         <details>
@@ -72,21 +74,33 @@
           </div>
         </details>
         <details>
-          <summary>After an update, the settings page opened and the sample prompts came back. Why?</summary>
+          <summary>Where are the sample prompts? Can I get starter prompts later?</summary>
           <div class="answer">
-            <p>After each install or update, the extension opens its settings page and adds back any of the five sample prompts that are missing. Your own prompts, and samples you edited, are kept as they are. You can delete the samples again.</p>
+            <p>Starting with 4.0.0 (the store version is still 3.2.2), the extension doesn't add sample prompts on its own. After you install, a welcome page lets you pick starter packs, or start blank. Open <strong>Starter packs</strong> on the settings page to add packs any time. The five old samples are in the Everyday pack. Adding a pack never replaces a shortcut you already have, and updates no longer bring back prompts you deleted.</p>
           </div>
         </details>
         <details>
           <summary>How do I share prompts with my team?</summary>
           <div class="answer">
-            <p>Click <strong>Export JSON</strong> on the settings page and send the file. Your teammates click <strong>Import JSON</strong> to add those prompts to theirs.</p>
+            <p>Click <strong>Export prompts (to file)</strong> under <strong>Import &amp; export</strong> on the settings page and send the file. Your teammates click <strong>Import prompts (from file)</strong> to add those prompts to theirs.</p>
           </div>
         </details>
         <details>
           <summary>Can I use it on a site that isn't listed?</summary>
           <div class="answer">
-            <p>Not in the Chrome Web Store version yet. Coming in the next version, <a href="setup.html#your-sites">Your Sites</a> lets you add any chat site and allow access to it.</p>
+            <p>With 4.0.0, yes; the store version is still 3.2.2. On that site, click the extension's toolbar button and choose <strong>Turn on for this site</strong>, or type the address under <a href="setup.html#your-sites">Your sites</a> in settings. Chrome asks you to allow access to that one site. Some sites use message boxes the extension can't type into; if <span class="shortcut">//</span> does nothing there, remove the site.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Do the sites I added follow me to another computer?</summary>
+          <div class="answer">
+            <p>Not yet. In version 4.0.0, Google Drive backup carries your prompts but not your list of added sites, so add them again on each computer. Syncing your sites through Drive is coming next.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Is it free? How can I support it?</summary>
+          <div class="answer">
+            <p>It's free, with no ads and no paid version. If it saves you time, click <strong>Support</strong> in settings or in the toolbar popup to see our Ko-fi page, then <strong>Open Ko-fi</strong> to buy a coffee. It's entirely optional.</p>
           </div>
         </details>
         <details>
@@ -98,7 +112,7 @@
         <details>
           <summary>Is my data private?</summary>
           <div class="answer">
-            <p>Yes. Your prompts are stored in your browser, and we run no server and no analytics. Google Drive backup is optional and only touches its own file. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+            <p>Yes. Your prompts are stored in your browser, and we run no server and no analytics. From 4.0.0, the <span class="shortcut">//</span> menu is drawn in its own frame the chat site can't read; the store version is still 3.2.2. Google Drive backup is optional and only touches its own file. Details are in the <a href="privacy.html">privacy policy</a>.</p>
           </div>
         </details>
         <details>
@@ -134,6 +148,7 @@
       <ul aria-label="More links">
         <li><a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">Chrome Web Store</a></li>
         <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+        <li><a href="https://ko-fi.com/kengblog">Support on Ko-fi</a></li>
         <li><a href="privacy.html">Privacy policy</a></li>
       </ul>
     </div>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Setup · AI Prompt Assistant</title>
-  <meta name="description" content="Install AI Prompt Assistant, add your first prompt, back up to Google Drive and use // in AI chats.">
+  <meta name="description" content="Install AI Prompt Assistant, pick starter packs, add your own prompts and sites, back up to Google Drive and use // in AI chats.">
   <link rel="canonical" href="https://yck2024.github.io/ai-prompt-assistant/setup.html">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#F4EFE6" media="(prefers-color-scheme: light)">
@@ -36,14 +36,17 @@
       <div class="wrap has-art">
         <div>
           <h1 id="page-title">Set up AI Prompt Assistant</h1>
-          <p class="lead">A few minutes from install to your first <span class="shortcut">//</span> prompt.</p>
+          <p class="lead">A few minutes from install to your first <span class="shortcut">//</span> prompt. This guide previews version 4.0.0, arriving after store review. The Chrome Web Store version is still 3.2.2; the new screens and features below arrive with 4.0.0.</p>
           <ul class="toc" aria-label="On this page">
             <li><a href="#install">1. Install</a></li>
-            <li><a href="#first-prompt">2. Add a prompt</a></li>
-            <li><a href="#use">3. Use it in a chat</a></li>
+            <li><a href="#packs">2. Pick starter packs</a></li>
+            <li><a href="#first-prompt">3. Add your own prompt</a></li>
+            <li><a href="#use">4. Use it in a chat</a></li>
+            <li><a href="#toolbar">The toolbar button</a></li>
+            <li><a href="#your-sites">Add your own sites</a></li>
             <li><a href="#drive">Google Drive backup</a></li>
             <li><a href="#export">Export &amp; import</a></li>
-            <li><a href="#your-sites">Add your own sites (next version)</a></li>
+            <li><a href="#support">Support the project</a></li>
           </ul>
         </div>
         <img class="illo" src="assets/img/welcome-hero.webp" width="440" height="375" alt="An open notebook with a speech bubble showing two slashes.">
@@ -55,33 +58,59 @@
         <h2 id="install-title"><span class="sticky">1. Install</span></h2>
         <ol class="steps">
           <li>Open <a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">AI Prompt Assistant on the Chrome Web Store</a> and click <strong>Add to Chrome</strong>.</li>
-          <li>Chrome shows what the extension can access, such as the AI chat sites it works on. Click <strong>Add extension</strong>.</li>
-          <li>The settings page opens. Five sample prompts are already there: <span class="shortcut">//reviseEnglish</span>, <span class="shortcut">//summarize</span>, <span class="shortcut">//explain</span>, <span class="shortcut">//translate</span> and <span class="shortcut">//codeReview</span>.</li>
-          <li>Optional: click the puzzle-piece icon in Chrome's toolbar and pin <strong>AI Prompt Assistant</strong> so its icon is always one click away.</li>
+          <li>Chrome shows what the extension can access: the <a href="index.html#sites-title">built-in AI chat sites</a>. Click <strong>Add extension</strong>.</li>
+          <li>With 4.0.0, a welcome page opens so you can pick some starter prompts (see the next step). The store version is still 3.2.2 and does not have this page yet.</li>
+          <li>Optional: click the puzzle-piece icon in Chrome's toolbar and pin <strong>AI Prompt Assistant</strong> so its button is always one click away.</li>
           <li>Refresh any AI chat tabs that were already open, so the extension can start there.</li>
         </ol>
+        <div class="note">
+          <p><strong>When 4.0.0 becomes available:</strong> Updating from 3.2.2 keeps your prompts. Version 4.0.0 works on more sites, so Chrome may pause the extension and ask you to accept the new sites. Accept, then refresh your chat tabs. Your prompts are kept.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packs" aria-labelledby="packs-title">
+      <div class="wrap">
+        <h2 id="packs-title"><span class="sticky sticky--sage">2. Pick starter packs</span></h2>
+        <div class="split">
+          <div>
+            <p>The welcome page asks what you mostly use AI for. Each starter pack holds eight short, ready-to-use prompts.</p>
+            <ol class="steps">
+              <li>Tick one or more packs: <strong>Everyday</strong>, <strong>Developer</strong>, <strong>Writer</strong>, <strong>Sales</strong>, <strong>Consulting</strong>, <strong>Student</strong> or <strong>Marketing</strong>.</li>
+              <li>Click the button under the packs. It counts what you picked, such as <strong>Add 3 packs</strong>. The page then tells you how many prompts were added.</li>
+              <li>Or click <strong>Start blank</strong> to begin with an empty notebook.</li>
+            </ol>
+            <p>You can add more packs later from <strong>Starter packs</strong> on the settings page. Adding a pack never replaces a shortcut you already have. The Everyday pack includes the five sample prompts from earlier versions, such as <span class="shortcut">//summarize</span> and <span class="shortcut">//codeReview</span>.</p>
+            <p class="muted">Starter pack prompts are adapted from <a href="https://github.com/f/prompts.chat">prompts.chat</a>, which is in the public domain (CC0 1.0). They come with the extension, so nothing is downloaded.</p>
+          </div>
+          <figure>
+            <img class="shot" src="assets/img/screenshot-welcome.webp" width="960" height="675" loading="lazy" alt="The welcome page: “Hi! Let’s fill your notebook.”, the three steps Type //, Pick a prompt and Press Tab, and seven starter pack cards (Everyday, Developer, Writer, Sales, Consulting, Student, Marketing) with 8 prompts each, above Start blank and Pick a pack buttons.">
+            <figcaption>The welcome page that opens after you install 4.0.0.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <section class="section" id="first-prompt" aria-labelledby="first-title">
       <div class="wrap">
-        <h2 id="first-title"><span class="sticky">2. Add your first prompt</span></h2>
+        <h2 id="first-title"><span class="sticky">3. Add your own prompt</span></h2>
         <div class="split">
           <div>
             <ol class="steps">
-              <li>Click the extension's icon in the toolbar, then <strong>Manage Prompts</strong>. (The settings page also opens after you install.)</li>
-              <li>Under <strong>Add New Prompt</strong>, type a <strong>Shortcut Key</strong>, such as <code>meetingNotes</code>. Shortcuts can't contain spaces.</li>
-              <li>Type the prompt itself in <strong>Prompt Content</strong>, for example: <em>“Turn these notes into a short summary with action items and owners:”</em></li>
-              <li>Click <strong>Add Prompt</strong>. It now works on every supported site.</li>
+              <li>Click the extension's button in the toolbar, then <strong>Open settings</strong> (or <strong>Settings</strong> at the bottom).</li>
+              <li>Under <strong>Your prompts</strong>, click <strong>Add prompt</strong>.</li>
+              <li>Type a <strong>Shortcut</strong>, such as <code>meetingNotes</code>. Shortcuts can't contain spaces.</li>
+              <li>Type the <strong>Prompt</strong> itself, for example: <em>“Turn these notes into a short summary with action items and owners:”</em></li>
+              <li>Click <strong>Save prompt</strong>. It now works on every supported site.</li>
             </ol>
-            <p>To change or remove a prompt, use <strong>Edit</strong> or <strong>Delete</strong> next to it under <strong>Your Prompts</strong>.</p>
+            <p>To change or remove a prompt, use the pencil or bin button next to it. The search box finds any prompt. With a long list, settings shows 20 prompts at a time; click <strong>Show more</strong> to see the next ones.</p>
             <div class="note">
               <p><strong>Pick shortcuts you'll remember.</strong> <span class="shortcut">//reviseEnglish</span> is easier to find later than <span class="shortcut">//r1</span>. A shared start such as <code>work_</code> or <code>study_</code> keeps related prompts together in the menu.</p>
             </div>
           </div>
           <figure>
-            <img class="shot" src="assets/img/screenshot-settings.webp" width="710" height="800" loading="lazy" alt="The extension's settings page, with the Add New Prompt form (Shortcut Key and Prompt Content) and the Google Drive Sync section below it.">
-            <figcaption>The settings page: add prompts at the top, Google Drive backup below.</figcaption>
+            <img class="shot" src="assets/img/screenshot-settings.webp" width="960" height="725" loading="lazy" alt="The settings page: a menu on the left (Your prompts, Starter packs, Your sites, Drive sync, Import &amp; export, Help, Support) and, on the right, a search box, an Add prompt button and a list of shortcuts such as //clearer, //codeReview and //commitMsg with edit and delete buttons.">
+            <figcaption>The settings page: your prompts, with the other sections in the menu.</figcaption>
           </figure>
         </div>
       </div>
@@ -89,12 +118,12 @@
 
     <section class="section" id="use" aria-labelledby="use-title">
       <div class="wrap narrow">
-        <h2 id="use-title"><span class="sticky">3. Use it in a chat</span></h2>
+        <h2 id="use-title"><span class="sticky">4. Use it in a chat</span></h2>
         <ol class="steps">
           <li>Open a <a href="index.html#sites-title">supported chat site</a> and click in the message box.</li>
           <li>Type <span class="shortcut">//</span>. The menu lists your prompts.</li>
           <li>Keep typing to narrow it down: <span class="shortcut">//rev</span> shows every shortcut with “rev” in it.</li>
-          <li>Press <kbd>Tab</kbd> to insert the highlighted prompt. Then add your own text and send.</li>
+          <li>Press <kbd>Tab</kbd>, or click a prompt, to insert it. Then add your own text and send.</li>
         </ol>
         <div class="table-wrap">
           <table>
@@ -109,6 +138,63 @@
             </tbody>
           </table>
         </div>
+        <p>The menu is drawn in its own extension frame, so the chat site can't read or search the prompts listed in it. It matches the site's light or dark look.</p>
+      </div>
+    </section>
+
+    <section class="section" id="toolbar" aria-labelledby="toolbar-title">
+      <div class="wrap">
+        <h2 id="toolbar-title"><span class="sticky sticky--sage">The toolbar button</span></h2>
+        <div class="split">
+          <div>
+            <p>Click the extension's button in Chrome's toolbar to see how many prompts you have and whether the extension is on for the page you're looking at:</p>
+            <ul>
+              <li><strong>Active on</strong> the site: type <span class="shortcut">//</span> and go.</li>
+              <li><strong>Reload to start</strong>: the site is supported, but the tab was open before the extension started. Click <strong>Reload this tab</strong>.</li>
+              <li><strong>Not active</strong> on a site that isn't built in: click <strong>Turn on for this site</strong> to <a href="#your-sites">add it</a>.</li>
+              <li><strong>Not available on this page</strong>: pages such as Chrome's own settings, where extensions can't run.</li>
+            </ul>
+            <p>It only looks at the current tab when you click the button, to show this status and pre-fill the address if you choose <strong>Turn on for this site</strong>.</p>
+          </div>
+          <figure>
+            <img class="shot" src="assets/img/screenshot-popup.webp" width="360" height="425" loading="lazy" alt="The toolbar popup: AI Prompt Assistant, 24 prompts, the status “Not available on this page”, an Open settings button, the hint “Type // then press Tab”, the list of sites it works on, and a Support link.">
+            <figcaption>The popup, opened on a page where extensions can't run.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="your-sites" aria-labelledby="sites-title">
+      <div class="wrap">
+        <h2 id="sites-title"><span class="sticky">Add your own sites</span></h2>
+        <p>Use your prompts on chat sites that aren't built in, such as an AI tool your company runs.</p>
+        <div class="split">
+          <div>
+            <h3>The quick way</h3>
+            <ol class="steps">
+              <li>Open the chat site and click the extension's toolbar button.</li>
+              <li>Click <strong>Turn on for this site</strong>. Settings opens at <strong>Your sites</strong> with the site's address already filled in.</li>
+              <li>Click <strong>Add site</strong>. Chrome asks whether to allow access to that one site. Choose <strong>Allow</strong>.</li>
+              <li>Reload the chat tab, then type <span class="shortcut">//</span> in its message box.</li>
+            </ol>
+            <h3>Or type the address</h3>
+            <p>On the settings page, under <strong>Your sites</strong>, type the site's domain, such as <code>chat.example.com</code>, or paste a full URL from the address bar. Then click <strong>Add site</strong> and allow access. A domain without <code>https://</code> also covers its <code>www.</code> address.</p>
+          </div>
+          <figure>
+            <img class="shot" src="assets/img/screenshot-your-sites.webp" width="960" height="583" loading="lazy" alt="The Your sites section of settings: a Built in list (ChatGPT, Claude, Gemini, Google AI Studio and 15 more sites, each marked On) and a Your own sites box with the note “Sites you add can see the prompts you use there.”, an address field and an Add site button.">
+            <figcaption>Your sites in settings: built-in sites on the left, your own on the right.</figcaption>
+          </figure>
+        </div>
+        <ul>
+          <li>The extension runs only on the sites you allow. Click <strong>Remove</strong> next to a site to stop it running there; that also gives back its access.</li>
+          <li>If you take away a site's access in Chrome's own menu, it shows <strong>Access needed</strong>. Click <strong>Allow Access</strong> to turn it back on.</li>
+          <li>A site you added that later became built in shows <strong>Now built in</strong>. It keeps working either way.</li>
+          <li>Some sites use message boxes the extension can't type into. If <span class="shortcut">//</span> does nothing on a site you added, remove it.</li>
+        </ul>
+        <p>Sites you add can see the prompts you use there. Before you add a site, read <a href="privacy.html#what-sites-see">what a site can see</a>.</p>
+        <div class="note note--sage">
+          <p><strong>Coming next: your sites in Google Drive.</strong> In 4.0.0, Google Drive backup carries your prompts but not your list of added sites. Add your sites again on each computer for now.</p>
+        </div>
       </div>
     </section>
 
@@ -118,7 +204,7 @@
         <p>Your prompts live in this browser only. Chrome's own sync doesn't copy them to your other computers. To back them up, or to use them on another computer, save them to your Google Drive. This is optional.</p>
         <h3>Back up your prompts</h3>
         <ol class="steps">
-          <li>On the settings page, find <strong>Google Drive Sync</strong> and click <strong>Connect to Google Drive</strong>.</li>
+          <li>On the settings page, open <strong>Drive sync</strong> and click <strong>Connect to Google Drive</strong>.</li>
           <li>Google asks you to allow access. The extension asks only for files it creates itself; it can't see anything else in your Drive.</li>
           <li>Click <strong>Upload to Drive</strong>. Your prompts are saved to <code>ai-prompt-assistant-prompts.json</code> in My Drive.</li>
           <li>After you change your prompts, click <strong>Upload to Drive</strong> again. Backups don't run on their own.</li>
@@ -129,7 +215,7 @@
           <li>Click <strong>Connect to Google Drive</strong> with the same Google account.</li>
           <li>Click <strong>Download from Drive</strong>. Prompts from Drive are added to the ones already there. If a shortcut exists in both places, you're asked before it's replaced.</li>
         </ol>
-        <p>If you upload after changing prompts in two places, the extension shows <strong>Sync Conflicts Detected</strong> so you can choose which version of each prompt to keep.</p>
+        <p>If you upload after changing prompts in two places, the extension shows <strong>Your prompts changed in two places</strong> so you can choose which version of each prompt to keep.</p>
         <p><strong>Disconnect</strong> removes the extension's access to your Drive and keeps your prompts in the browser. The backup file stays in your Drive until you delete it.</p>
         <div class="note">
           <p><strong>Drive backup needs Google Chrome.</strong> Chrome handles the Google sign-in. If you use another Chromium browser, use <a href="#export">Export &amp; import</a> instead.</p>
@@ -141,25 +227,22 @@
       <div class="wrap narrow">
         <h2 id="export-title"><span class="sticky">Export &amp; import</span></h2>
         <ul>
-          <li><strong>Export JSON</strong> (under <strong>Your Prompts</strong>) downloads all your prompts as one file. Keep it as a backup or share it with your team.</li>
-          <li><strong>Import JSON</strong> adds the prompts from a file. If a shortcut already exists, you're asked before it's replaced.</li>
+          <li><strong>Export prompts (to file)</strong>, under <strong>Import &amp; export</strong> in settings, downloads all your prompts as one JSON file. Keep it as a backup or share it with your team.</li>
+          <li><strong>Import prompts (from file)</strong> adds the prompts from a file. If a shortcut already exists, you're asked before it's replaced.</li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="your-sites" aria-labelledby="sites-title">
+    <section class="section" id="support" aria-labelledby="support-title">
       <div class="wrap narrow">
-        <h2 id="sites-title"><span class="sticky sticky--sage">Add your own sites</span> <span class="tag">Next version</span></h2>
-        <p>Coming in the next version; it isn't in the Chrome Web Store version yet. It lets you use your prompts on chat sites that aren't built in, such as an AI tool your company runs.</p>
-        <ol class="steps">
-          <li>On the settings page, find <strong>Your Sites</strong>.</li>
-          <li>Type the site's domain, such as <code>perplexity.ai</code>. That covers both <code>perplexity.ai</code> and <code>www.perplexity.ai</code>. A full URL pasted from the address bar also works. Click <strong>Add Site</strong>.</li>
-          <li>Chrome asks whether to allow access to that one site. Choose <strong>Allow</strong>.</li>
-          <li>Reload any tabs already open on that site. Then type <span class="shortcut">//</span> in its message box.</li>
-        </ol>
-        <p>The extension runs only on the sites you allow. Click <strong>Remove</strong> next to a site to stop it running there; that also gives back its access.</p>
-        <p>Some sites use message boxes the extension can't type into. If <span class="shortcut">//</span> does nothing on a site you added, remove it.</p>
-        <p>Sites you add can see the prompts you use there. Before you add a site, read <a href="privacy.html#what-sites-see">what a site can see</a>.</p>
+        <h2 id="support-title"><span class="sticky sticky--sage">Support the project</span></h2>
+        <p>AI Prompt Assistant is free and made by one person. If it saves you time, you can buy a coffee on Ko-fi.</p>
+        <ul>
+          <li>Click <strong>Support</strong> in the settings menu, or the heart <strong>Support</strong> link at the bottom of the toolbar popup.</li>
+          <li>A window shows a preview of the <a href="https://ko-fi.com/kengblog">Ko-fi page</a>. The preview is view-only; click <strong>Open Ko-fi</strong> to open the real page in a new tab.</li>
+          <li>Close the window with <kbd>Esc</kbd>, its close button, or a click outside it.</li>
+        </ul>
+        <p>Supporting is entirely optional. Every feature works the same without it.</p>
       </div>
     </section>
   </main>
@@ -172,6 +255,7 @@
       <ul aria-label="More links">
         <li><a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">Chrome Web Store</a></li>
         <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+        <li><a href="https://ko-fi.com/kengblog">Support on Ko-fi</a></li>
         <li><a href="privacy.html">Privacy policy</a></li>
       </ul>
     </div>
