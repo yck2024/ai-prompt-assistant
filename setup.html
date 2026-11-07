@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setup · AI Prompt Assistant</title>
+  <meta name="description" content="Install AI Prompt Assistant, add your first prompt, back up to Google Drive and use // in AI chats.">
+  <link rel="canonical" href="https://yck2024.github.io/ai-prompt-assistant/setup.html">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F4EFE6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161B2A" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-128.png">
+  <link rel="preload" href="assets/fonts/nunito-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" alt="" width="40" height="40">AI Prompt Assistant</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="setup.html" aria-current="page">Setup</a></li>
+        <li><a href="release-notes.html">Release notes</a></li>
+        <li><a href="faq.html">FAQ &amp; support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="wrap has-art">
+        <div>
+          <h1 id="page-title">Set up AI Prompt Assistant</h1>
+          <p class="lead">A few minutes from install to your first <span class="shortcut">//</span> prompt.</p>
+          <ul class="toc" aria-label="On this page">
+            <li><a href="#install">1. Install</a></li>
+            <li><a href="#first-prompt">2. Add a prompt</a></li>
+            <li><a href="#use">3. Use it in a chat</a></li>
+            <li><a href="#drive">Google Drive backup</a></li>
+            <li><a href="#export">Export &amp; import</a></li>
+            <li><a href="#your-sites">Add your own sites</a></li>
+          </ul>
+        </div>
+        <img class="illo" src="assets/img/welcome-hero.webp" width="440" height="375" alt="An open notebook with a speech bubble showing two slashes.">
+      </div>
+    </section>
+
+    <section class="section" id="install" aria-labelledby="install-title">
+      <div class="wrap narrow">
+        <h2 id="install-title"><span class="sticky">1. Install</span></h2>
+        <ol class="steps">
+          <li>Open <a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">AI Prompt Assistant on the Chrome Web Store</a> and click <strong>Add to Chrome</strong>.</li>
+          <li>Chrome shows what the extension can access, such as the AI chat sites it works on. Click <strong>Add extension</strong>.</li>
+          <li>The settings page opens. Five sample prompts are already there: <span class="shortcut">//reviseEnglish</span>, <span class="shortcut">//summarize</span>, <span class="shortcut">//explain</span>, <span class="shortcut">//translate</span> and <span class="shortcut">//codeReview</span>.</li>
+          <li>Optional: click the puzzle-piece icon in Chrome's toolbar and pin <strong>AI Prompt Assistant</strong> so its icon is always one click away.</li>
+          <li>Refresh any AI chat tabs that were already open, so the extension can start there.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="first-prompt" aria-labelledby="first-title">
+      <div class="wrap">
+        <h2 id="first-title"><span class="sticky">2. Add your first prompt</span></h2>
+        <div class="split">
+          <div>
+            <ol class="steps">
+              <li>Click the extension's icon in the toolbar, then <strong>Manage Prompts</strong>. (The settings page also opens after you install.)</li>
+              <li>Under <strong>Add New Prompt</strong>, type a <strong>Shortcut Key</strong>, such as <code>meetingNotes</code>. Shortcuts can't contain spaces.</li>
+              <li>Type the prompt itself in <strong>Prompt Content</strong>, for example: <em>“Turn these notes into a short summary with action items and owners:”</em></li>
+              <li>Click <strong>Add Prompt</strong>. It now works on every supported site.</li>
+            </ol>
+            <p>To change or remove a prompt, use <strong>Edit</strong> or <strong>Delete</strong> next to it under <strong>Your Prompts</strong>.</p>
+            <div class="note">
+              <p><strong>Pick shortcuts you'll remember.</strong> <span class="shortcut">//reviseEnglish</span> is easier to find later than <span class="shortcut">//r1</span>. A shared start such as <code>work_</code> or <code>study_</code> keeps related prompts together in the menu.</p>
+            </div>
+          </div>
+          <figure>
+            <img class="shot" src="assets/img/screenshot-settings.webp" width="710" height="800" loading="lazy" alt="The extension's settings page, with the Add New Prompt form (Shortcut Key and Prompt Content) and the Google Drive Sync section below it.">
+            <figcaption>The settings page: add prompts at the top, Google Drive backup below.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="use" aria-labelledby="use-title">
+      <div class="wrap narrow">
+        <h2 id="use-title"><span class="sticky">3. Use it in a chat</span></h2>
+        <ol class="steps">
+          <li>Open a <a href="index.html#sites-title">supported chat site</a> and click in the message box.</li>
+          <li>Type <span class="shortcut">//</span>. The menu lists your prompts.</li>
+          <li>Keep typing to narrow it down: <span class="shortcut">//rev</span> shows every shortcut with “rev” in it.</li>
+          <li>Press <kbd>Tab</kbd> to insert the highlighted prompt. Then add your own text and send.</li>
+        </ol>
+        <div class="table-wrap">
+          <table>
+            <caption class="muted" style="caption-side:top;text-align:left;padding:10px 14px;font-size:14px">Keys in the prompt menu</caption>
+            <thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead>
+            <tbody>
+              <tr><td><span class="shortcut">//</span></td><td>Open the menu with all your prompts</td></tr>
+              <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Move through the list</td></tr>
+              <tr><td><kbd>Tab</kbd></td><td>Insert the highlighted prompt (recommended)</td></tr>
+              <tr><td><kbd>Enter</kbd></td><td>Also inserts, but on some sites Enter sends the message instead</td></tr>
+              <tr><td><kbd>Esc</kbd></td><td>Close the menu</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="drive" aria-labelledby="drive-title">
+      <div class="wrap narrow">
+        <h2 id="drive-title"><span class="sticky sticky--sage">Google Drive backup and sync</span></h2>
+        <p>Your prompts live in this browser only. Chrome's own sync doesn't copy them to your other computers. To back them up, or to use them on another computer, save them to your Google Drive. This is optional.</p>
+        <h3>Back up your prompts</h3>
+        <ol class="steps">
+          <li>On the settings page, find <strong>Google Drive Sync</strong> and click <strong>Connect to Google Drive</strong>.</li>
+          <li>Google asks you to allow access. The extension asks only for files it creates itself; it can't see anything else in your Drive.</li>
+          <li>Click <strong>Upload to Drive</strong>. Your prompts are saved to <code>ai-prompt-assistant-prompts.json</code> in My Drive.</li>
+          <li>After you change your prompts, click <strong>Upload to Drive</strong> again. Backups don't run on their own.</li>
+        </ol>
+        <h3>Load them on another computer</h3>
+        <ol class="steps">
+          <li>Install the extension there and open its settings page.</li>
+          <li>Click <strong>Connect to Google Drive</strong> with the same Google account.</li>
+          <li>Click <strong>Download from Drive</strong>. Prompts from Drive are added to the ones already there. If a shortcut exists in both places, you're asked before it's replaced.</li>
+        </ol>
+        <p>If you upload after changing prompts in two places, the extension shows <strong>Sync Conflicts Detected</strong> so you can choose which version of each prompt to keep.</p>
+        <p><strong>Disconnect</strong> removes the extension's access to your Drive and keeps your prompts in the browser. The backup file stays in your Drive until you delete it.</p>
+        <div class="note">
+          <p><strong>Drive backup needs Google Chrome.</strong> Chrome handles the Google sign-in. If you use another Chromium browser, use <a href="#export">Export &amp; import</a> instead.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="export" aria-labelledby="export-title">
+      <div class="wrap narrow">
+        <h2 id="export-title"><span class="sticky">Export &amp; import</span></h2>
+        <ul>
+          <li><strong>Export JSON</strong> (under <strong>Your Prompts</strong>) downloads all your prompts as one file. Keep it as a backup or share it with your team.</li>
+          <li><strong>Import JSON</strong> adds the prompts from a file. If a shortcut already exists, you're asked before it's replaced.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="your-sites" aria-labelledby="sites-title">
+      <div class="wrap narrow">
+        <h2 id="sites-title"><span class="sticky sticky--sage">Add your own sites</span> <span class="tag">Next update</span></h2>
+        <p>This arrives with the next Chrome Web Store update. It lets you use your prompts on chat sites that aren't built in, such as an AI tool your company runs.</p>
+        <ol class="steps">
+          <li>On the settings page, find <strong>Your Sites</strong>.</li>
+          <li>Type the site's address, such as <code>chat.example.com</code>, or paste a full link. Click <strong>Add Site</strong>.</li>
+          <li>Chrome asks whether to allow access to that one site. Choose <strong>Allow</strong>.</li>
+          <li>Type <span class="shortcut">//</span> in that site's message box. Tabs already open on the site work straight away.</li>
+        </ol>
+        <p>The extension runs only on the sites you allow. Click <strong>Remove</strong> next to a site to stop it running there; that also gives back its access.</p>
+        <p>Some sites use message boxes the extension can't type into. If <span class="shortcut">//</span> does nothing on a site you added, remove it.</p>
+        <p class="muted">Before you add a site, read <a href="privacy.html#your-sites">what a site can see</a>.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p><strong>AI Prompt Assistant</strong> is a Chrome extension: type <span class="shortcut">//</span> in an AI chat to drop in your saved prompts.</p>
+        <p>Fonts: Nunito and Inter, under the SIL Open Font License (<a href="assets/fonts/OFL-Nunito.txt">Nunito</a>, <a href="assets/fonts/OFL-Inter.txt">Inter</a>). More projects on <a href="https://kengblog.com/">kengblog.com</a>.</p>
+      </div>
+      <ul aria-label="More links">
+        <li><a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">Chrome Web Store</a></li>
+        <li><a href="https://forms.gle/EVX64Rimp2fQsJxh8">Send feedback</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
