@@ -36,7 +36,7 @@
       <div class="wrap has-art">
         <div>
           <h1 id="page-title">Set up AI Prompt Assistant</h1>
-          <p class="lead">A few minutes from install to your first <span class="shortcut">//</span> prompt. This guide previews version 4.0.0, arriving after store review. The Chrome Web Store version is still 3.2.2; the new screens and features below arrive with 4.0.0.</p>
+          <p class="lead">A few minutes from install to your first <span class="shortcut">//</span> prompt. This guide previews version 4.0.1, arriving after store review. The Chrome Web Store version is still 3.2.2; the new screens and features below arrive with 4.0.1.</p>
           <ul class="toc" aria-label="On this page">
             <li><a href="#install">1. Install</a></li>
             <li><a href="#packs">2. Pick starter packs</a></li>
@@ -59,12 +59,12 @@
         <ol class="steps">
           <li>Open <a href="https://chromewebstore.google.com/detail/ai-prompt-assistant/aakmnieacpcmnfnljndefdocpcoajjoe">AI Prompt Assistant on the Chrome Web Store</a> and click <strong>Add to Chrome</strong>.</li>
           <li>Chrome shows what the extension can access: the <a href="index.html#sites-title">built-in AI chat sites</a>. Click <strong>Add extension</strong>.</li>
-          <li>With 4.0.0, a welcome page opens so you can pick some starter prompts (see the next step). The store version is still 3.2.2 and does not have this page yet.</li>
+          <li>With 4.0.1, a welcome page opens so you can pick some starter prompts (see the next step). The store version is still 3.2.2 and does not have this page yet.</li>
           <li>Optional: click the puzzle-piece icon in Chrome's toolbar and pin <strong>AI Prompt Assistant</strong> so its button is always one click away.</li>
           <li>Refresh any AI chat tabs that were already open, so the extension can start there.</li>
         </ol>
         <div class="note">
-          <p><strong>When 4.0.0 becomes available:</strong> Updating from 3.2.2 keeps your prompts. Version 4.0.0 works on more sites, so Chrome may pause the extension and ask you to accept the new sites. Accept, then refresh your chat tabs. Your prompts are kept.</p>
+          <p><strong>When 4.0.1 becomes available:</strong> Updating from 3.2.2 keeps your prompts. Version 4.0.1 works on more sites, so Chrome may pause the extension and ask you to accept the new sites. Accept, then refresh your chat tabs. Your prompts are kept.</p>
         </div>
       </div>
     </section>
@@ -85,7 +85,7 @@
           </div>
           <figure>
             <img class="shot" src="assets/img/screenshot-welcome.webp" width="960" height="675" loading="lazy" alt="The welcome page: “Hi! Let’s fill your notebook.”, the three steps Type //, Pick a prompt and Press Tab, and seven starter pack cards (Everyday, Developer, Writer, Sales, Consulting, Student, Marketing) with 8 prompts each, above Start blank and Pick a pack buttons.">
-            <figcaption>The welcome page that opens after you install 4.0.0.</figcaption>
+            <figcaption>The welcome page that opens after you install 4.0.1.</figcaption>
           </figure>
         </div>
       </div>
@@ -193,7 +193,7 @@
         </ul>
         <p>Sites you add can see the prompts you use there. Before you add a site, read <a href="privacy.html#what-sites-see">what a site can see</a>.</p>
         <div class="note note--sage">
-          <p><strong>Coming next: your sites in Google Drive.</strong> In 4.0.0, Google Drive backup carries your prompts but not your list of added sites. Add your sites again on each computer for now.</p>
+          <p><strong>Your sites in Google Drive.</strong> From 4.0.1, Google Drive backup saves your list of added sites along with your prompts, so it follows you to your other browsers. See <a href="#drive">Google Drive backup and sync</a>.</p>
         </div>
       </div>
     </section>
@@ -206,14 +206,14 @@
         <ol class="steps">
           <li>On the settings page, open <strong>Drive sync</strong> and click <strong>Connect to Google Drive</strong>.</li>
           <li>Google asks you to allow access. The extension asks only for files it creates itself; it can't see anything else in your Drive.</li>
-          <li>Click <strong>Upload to Drive</strong>. Your prompts are saved to <code>ai-prompt-assistant-prompts.json</code> in My Drive.</li>
-          <li>After you change your prompts, click <strong>Upload to Drive</strong> again. Backups don't run on their own.</li>
+          <li>Click <strong>Upload to Drive</strong>. Your prompts, and the sites you added, are saved to <code>ai-prompt-assistant-prompts.json</code> in My Drive.</li>
+          <li>After you change your prompts or your list of added sites, click <strong>Upload to Drive</strong> again. Backups don't run on their own.</li>
         </ol>
         <h3>Load them on another computer</h3>
         <ol class="steps">
           <li>Install the extension there and open its settings page.</li>
           <li>Click <strong>Connect to Google Drive</strong> with the same Google account.</li>
-          <li>Click <strong>Download from Drive</strong>. Prompts from Drive are added to the ones already there. If a shortcut exists in both places, you're asked before it's replaced.</li>
+          <li>Click <strong>Download from Drive</strong>. Prompts from Drive are added to the ones already there. If a shortcut exists in both places, you're asked before it's replaced. Sites you added on the other computer appear under <strong>Your sites</strong> marked <strong>Access needed</strong>; click <strong>Allow</strong> on each one to turn it on here.</li>
         </ol>
         <p>If you upload after changing prompts in two places, the extension shows <strong>Your prompts changed in two places</strong> so you can choose which version of each prompt to keep.</p>
         <p><strong>Disconnect</strong> removes the extension's access to your Drive and keeps your prompts in the browser. The backup file stays in your Drive until you delete it.</p>
